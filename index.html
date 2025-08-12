@@ -1,11 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DevClub Store</title>
 </head>
+
 <body>
-    
+    <header>
+        <div>DevClub Store</div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="tech-circle">
+        </div>
+
+        <div class="list">
+        </div>
+
+        <div class="arrows">
+            <button class="arrow-btn" id="prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
+                </svg>
+            </button>
+            <button class="arrow-btn" id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="indicators">
+            <div class="numbers">01</div>
+            <div class="dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="item active">
+                <div class="product-img">
+                    <img src="./img/apple-watch.png" alt="Apple Watch">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Novo Lançamento</p>
+                    <p class="product-name">Apple Watch Series 10</p>
+                    <p class="description"> O Apple Watch Series 10 é o smartwatch mais fino e avançado da Apple até o
+                        momento, combinando tecnologia, estilo e saúde num só dispositivo. Sua tela OLED de amplo ângulo
+                        é a maior já vista em um Apple Watch — cerca de 30 % maior que nos modelos Series 4–6, e até 9 %
+                        maior que os Series 7 – 9 — além de ser até 40 % mais brilhante quando vista de lado</p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="./img/air-pods.png" alt="Air pods Max">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Som Premium</p>
+                    <p class="product-name">Air Pods Max</p>
+                    <p class="description">Os AirPods Max são fones de ouvido over-ear da Apple com áudio de alta
+                        fidelidade, cancelamento de ruído ativo, áudio espacial e design premium, oferecendo som
+                        imersivo e conforto prolongado.</p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="product-img">
+                    <img src="./img/vision-pro.png" alt="Vison Pro">
+                </div>
+                <div class="content">
+                    <p class="product-tag">Alta Performance</p>
+                    <p class="product-name">Vision-pro</p>
+                    <p class="description">O Apple Vision Pro é um óculos de realidade mista da Apple que combina
+                        realidade aumentada e virtual, com telas de altíssima resolução, áudio espacial e controle por
+                        olhos, mãos e voz para oferecer uma experiência imersiva.</p>
+                    <button class="btn">Saiba mais</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
 </body>
+
 </html>
