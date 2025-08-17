@@ -4,12 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>DevClub Store</title>
 </head>
 
 <body>
     <header>
-        <div>DevClub Store</div>
+        <div class="logo">DevClub Store</div>
         <nav>
             <ul>
                 <li>Home</li>
@@ -21,35 +27,10 @@
 
     <main class="container">
         <div class="tech-circle">
-        </div>
-
-        <div class="list">
-        </div>
-
-        <div class="arrows">
-            <button class="arrow-btn" id="prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-left-square" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-                </svg>
-            </button>
-            <button class="arrow-btn" id="next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-arrow-right-square" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                </svg>
-            </button>
-        </div>
-
-        <div class="indicators">
-            <div class="numbers">01</div>
-            <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-            </div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
         </div>
 
         <div class="list">
@@ -66,6 +47,29 @@
                         maior que os Series 7 – 9 — além de ser até 40 % mais brilhante quando vista de lado</p>
                     <button class="btn">Saiba mais</button>
                 </div>
+            </div>
+
+
+            <div class="list">
+            </div>
+
+            <div class="arrows">
+                <button class="arrow-btn" id="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                        class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                    </svg>
+                    </svg>
+                </button>
+                <button class="arrow-btn" id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                        class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                    </svg>
+                </button>
             </div>
 
             <div class="item">
@@ -95,9 +99,18 @@
                     <button class="btn">Saiba mais</button>
                 </div>
             </div>
-
+            
+             <div class="indicators">
+                <div class="numbers">01</div>
+                <div class="dots">
+                    <div class="dot active"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
+<script src="./script.js"></script>
 
 </html>
