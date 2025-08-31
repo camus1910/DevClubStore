@@ -342,3 +342,105 @@ header nav ul li:hover::after{
     top: 20%;
     left: 70%;
 }
+
+.circle:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background:radial-gradient(circle, rgba(0, 72, 75, 0.9) 0%, rgba(0, 102, 75, 0.9) 100%) ;
+    transform: translate(-10%, -10%);
+    filter: blur(50px);
+    z-index: 1;
+    animation: circle1 5s infinite alternate;  
+}
+
+@keyframes circle1{
+    0%{
+        opacity: 0.5;
+        transform: translate(-10%, -10%)scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-10%, -10%)scale(1);
+    }    
+}
+
+.circle:nth-child(2)::before {
+    content:'';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 60%;
+    left: 80%;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 72, 75, 0.9) 0%, rgba(0, 102, 75, 0.9) 100%) ;
+    transform: translate(-60%, -80%);
+    filter: blur(50px);
+    z-index: 1;
+    animation: circle2 5s infinite alternate;
+}
+
+@keyframes circle2 {
+    0%{
+        opacity: 0.5;
+        transform: translate(-80%, -60%)scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-80%, -60%)scale(1);
+    }
+}
+
+.circle:nth-child(3)::after{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 70%;
+    left: 20%;
+    background: radial-gradient(circle, rgba(0, 72, 75, 0.9) 0%, rgba(0, 102, 75, 0.9) 100%) ;
+    transform: translate(-60%, -80%);
+    filter: blur(50px);
+    z-index: 1;
+    animation: circle3 5s infinite alternate;
+}
+
+@keyframes circle3 {
+       0%{
+        opacity: 0.5;
+        transform: translate(-20%, -70%)scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-20%, -70%)scale(1);
+    }
+    
+}
+
+.circle:nth-child(4)::after{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 20%;
+    left: 70%;
+    background: radial-gradient(circle, rgba(0, 72, 75, 0.9) 0%, rgba(0, 102, 75, 0.9) 100%) ;
+    transform: translate(-60%, -80%);
+    filter: blur(50px);
+    z-index: 1;
+    animation: circle4 5s infinite alternate;
+}
+
+@keyframes circle4 {
+       0%{
+        opacity: 0.5;
+        transform: translate(-70%, -20%)scale(0.7);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-70%, -20%)scale(1);
+    }
+    
+}
